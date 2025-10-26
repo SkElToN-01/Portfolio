@@ -1,0 +1,444 @@
+:root{
+    --text-color: #1a1c28;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* NAVBAR*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    background-color: var(--background-color);
+    position: fixed;
+    top: 0;
+    background-color: rgba(191, 214, 196, 0.9);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:hover{
+    color: var(--background-color);
+    transition: color 0.3s ease-in-out;
+}
+
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+section{
+    padding: 8rem 2rem;
+}
+
+section:nth-of-type(odd){
+    background-color: #f0f0f0;
+}
+
+section:nth-of-type(even){
+    background-color: #fff;
+}
+
+
+
+/* Section 1: About*/
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    margin-top: 9rem;
+    gap: 20px;
+}
+
+.about-section h2{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.about-section .head-shot{
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 37px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-section .head-shot img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.about-section .bio{
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    max-width: 55rem;
+}
+
+.about-section .bio p{
+    font-size: 17px;
+    font-weight: 300px;
+}
+
+.about-section .social-links{
+    font-size: 35px;
+}
+
+.about-section .social-links a{
+    padding: 0;
+    margin: 0 0.75rem;
+}
+
+.about-section .social-links a i{
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Change a and i color later*/
+
+.about-section .social-links a:hover i{
+    color: #a5d6b0;
+    transform: scale(1.2);
+}
+
+.about-section .social-links i{
+    color: #588061;
+    font-weight: 500;
+}
+
+
+/* change color of above a and i later */
+
+#projects-section{
+    width: 100%;
+    display: flex; 
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    min-height: auto;
+}
+
+
+#projects-section h2{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    /* TO ALIGN TEXT IN CENTER */
+    text-align: center;
+}
+
+
+/* Projects Section */
+
+
+.project-box{
+    width: 18rem;
+    text-align: center;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+
+.project-box:hover{
+    transform: scale(0.95); /* GROW THE BOX SLIGHTLY ON HOVER*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* ENHANCED SHADOW ON HOVER*/
+}
+
+.project-box img{
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+    
+}
+
+.projects h3{
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.project-box p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #494a4a;
+}
+
+
+
+
+/*  IF I ADD H5 FOR TECHNOLOGIES USED IN FUTURE
+    .project-box h5 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+} */
+
+
+
+/* ORIGINAL SWIPER CSS IS TILL HERE */
+
+/* Skills Section*/
+
+#skills-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    min-height: 30vh;
+}
+
+#skills-section h2{
+    margin-bottom: 1rem;
+    font-size: 45px;
+}
+
+#skills-section .skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /*Add gap between icons*/
+}
+
+.skills i{
+    font-size: 3rem;
+    color: #588061;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 1rem 0; 
+}
+
+.skills i:hover{
+    transform: scale(1.2);
+    color: #a5d6b0;
+}
+
+/* Leave a message Section*/
+
+#message-section{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+#message-section h2{
+    font-size: 45px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+#message-section p{
+    font-size: 18px;
+    color: #555;
+}
+
+footer{
+    background-color: #909090;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 14px;
+}
+
+
+/* Cards swiper*/
+
+.swiper{
+    width: 100%;
+    overflow-x: scroll !important;
+}
+
+.swiper-slide{
+    width: 272px !important;
+    height: 375.75px;
+}
+
+.swiper-slide > a{
+    display: block;
+    transform: scale(0.9);
+    width: 272px;
+    height: 375.75px;
+}
+
+
+
+
+
+/* MEDIA QUERIES FOR RESPONSIVNESS*/
+
+@media (min-width: 1690px){
+    .swiper-wrapper{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 990px){
+    nav .left a{
+        font-size: 1.25rem;
+    }
+
+    nav .right a{
+        font-size: 1.1rem;
+        margin: 0 0.5rem;
+    }
+
+    .about-section .head-shot{
+        width: 18rem;
+        height: 18rem;
+    }
+
+    #projects-section .project-box {
+        flex: 0 0 14rem /* adjust width for smaller screens*/
+    }
+
+    .skills i{
+        font-size: 2.5rem;
+    }
+
+
+
+    #skills-section .skills{
+        gap: 1.25rem;
+    }
+}
+
+@media (max-width: 770px){
+    nav .right a{
+        font-size: 1.1rem;
+        margin: 0 0.375rem;
+    }
+
+    .about-section .head-shot{
+        width: 16rem;
+        height: 16rem;
+    }
+
+    #projects-section .project-box {
+        flex: 0 0 14rem;
+    }
+
+    .skills i{
+        font-size: 2rem;;
+    }
+}
+
+@media (max-width: 600px){
+    /* NAVBAR*/
+
+    nav{
+        padding: 0 20px;
+    }
+
+    nav .left a{
+        font-size: 1.1rem;
+    }
+
+    nav .right a{
+        font-size: 0.8rem;
+        margin: 0 3px;
+    }
+
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span{
+        display: none;
+    }
+
+    .about-section .social-links{
+        font-size: 1.75rem;
+    }
+
+    .about-section h2{
+        font-size: 2.4rem;
+    }
+
+    .about-section .head-shot{
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .skills i{
+        font-size: 1.25rem;
+    }
+
+    #skills-section .skills{
+        gap: 1rem;
+    }
+
+    section{
+        padding: 6rem 1rem; /* Adjust padding for smaller screen*/
+    }
+
+    #projects-section {
+        padding: 6rem 1rem;
+    }
+
+   #leave-message-section {
+    padding: 3rem 1rem;
+   }
+}

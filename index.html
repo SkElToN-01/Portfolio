@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilpreet</title>
+    <!-- LINKING SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/2e0db9fb0a.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <!-- NAVBAR -->
+     <nav>
+        <div class="left">
+            <a href="/">Dilpreet Singh</a>
+        </div>
+        <div class="right">
+            <a href="#about-section">About</a>
+
+
+            <a href="#projects-section">Projects</a>
+
+            <a href="#skills-section">Skills</a>
+
+            <a href="#message-section">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+     </nav>
+
+     <main>
+        <!-- About Section-->
+         <section id="about-section" class="about-section">  
+            <h2>Hi, I'm Dilpreet</h2>
+            
+            <div class="head-shot">
+                <img src="images/ChatGPT Image Jul 11, 2025, 06_03_32 PM.webp" alt="Dilpreet Singh head shot" >
+            </div>
+            <div class="bio">
+                <p>Hey! I'm Dilpreet, a recent gradute who's excited about software deveolpment.
+                    with a background in computer scinece, 
+                    I'm well equiped with technical skillset and eagerness to experiment.
+                </p>
+                <br>
+                <p>
+                    My hobbies are playing video games, watching anime, and making videos.
+                </p>
+                
+            </div>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@LifeOfDan." target="_blank">
+                    <i class="fa-brands fa-square-youtube"></i>
+                </a> 
+                <a href="www.linkedin.com/in/dilpreet-singh-213aa525b" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/SkElToN-01" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+         </section>
+
+<!--Project section--> 
+
+           <section id="projects-section">
+                <h2>Projects</h2>
+                <!-- MAIN CONATIENR FOR SLIDER-->
+               <div class="swiper">
+                    <!--ADDITAL REQUIRED WRAPPER-->
+                   <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://github.com/SkElToN-01/Weather-App" class="project-box" target="_blank">
+                            <img src="images/Screenshot 2025-09-06 185409.webp" alt="project" class="project-image">
+                            <h3 class="badge">Developer</h3>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                        </a>
+                    </div>    
+                    <div class="swiper-slide">
+                        <a href="#" class="project-box">
+                            <img src="images/designer.jpg" class="project-image">
+                            <h3 class="badge">Developer</h3>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                        </a>
+                    </div> 
+                    <div class="swiper-slide">
+                        <a href="#" class="project-box">
+                            <img src="images/designer.jpg" class="project-image">
+                            <h3 class="badge">Developer</h3>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                        </a>
+                    </div> 
+                    <div class="swiper-slide">
+                        <a href="#" class="project-box">
+                            <img src="images/designer.jpg" class="project-image">
+                            <h3 class="badge">Developer</h3>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                        </a>
+                    </div> 
+                    <div class="swiper-slide">
+                        <a href="#" class="project-box">
+                            <img src="images/designer.jpg" class="project-image">
+                            <h3 class="badge">Developer</h3>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                        </a>
+                    </div> 
+                    </div>
+                </div>
+            </section>
+        
+
+<!--  Skills Section  -->
+        <section id="skills-section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-github-alt"></i>
+                <i class="fa-brands fa-git-alt"></i>
+            </div>
+        </section>
+
+<!--  Leave a message Section  -->
+        <section id="message-section">
+            <h2>Leave a message</h2>
+            <p>coming soon :)</p>
+        </section>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Dilpreet Singh. All Rights Reserved</p>
+        </footer>
+     </main>
+    
+     <!-- LINKIGN SWIPER JS-->
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Automatically update the copyright year
+            document.getElementById('year').textContent = new Date().getFullYear();
+    
+            // Initialize Swiper
+            const swiper = new Swiper(".swiper", {
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: "auto"
+            });
+        });
+    </script>
+
+
+</body>
+</html>
