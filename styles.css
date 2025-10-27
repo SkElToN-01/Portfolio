@@ -196,19 +196,23 @@ section:nth-of-type(even){
 
 
 
+
 .project-box:hover{
     transform: scale(0.95); /* GROW THE BOX SLIGHTLY ON HOVER*/
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* ENHANCED SHADOW ON HOVER*/
 }
 
+
+
 .project-box img{
     width: 100%;
     height: 12rem;
-    object-fit: cover;
     border-radius: 0.5rem;
     margin-bottom: 0.75rem;
     
 }
+
+
 
 .projects h3{
     margin-bottom: 0.5rem;
