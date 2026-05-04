@@ -77,7 +77,7 @@
                     <div class="swiper-slide">
                         <a href="https://github.com/SkElToN-01/Weather-App" class="project-box" target="_blank">
                             <img src="images/Screenshot 2025-09-06 185409.webp" alt="Weather application interface with a search bar and weather status cards" class="project-image">
-                            <h3 class="badge"><a href="">Weather App</a></h3>
+                            <h3 class="badge">Weather App</h3>
                             <p class="content">Developed this weather app Using JavaScript, HTML, CSS and API.</p>
                         </a>
                     </div>    
@@ -96,7 +96,7 @@
                         </a>
                     </div> 
                     <div class="swiper-slide">
-                        <a href="#" class="project-box">
+                        <a href="https://skelton-01.github.io/Recipe-Page/" class="project-box">
                             <img src="images/Screenshot_2026-02-05 Frontend Mentor Recipe page.webp" class="project-image" alt="Clean, minimalist recipe page layout featuring food photography and ingredient lists">
                             <h3 class="badge">Recipe Page</h3>
                             <p class="content">Clean, responsice recipe page layout featuring ingreadient lists and instructions.</p>
@@ -152,7 +152,16 @@
             const swiper = new Swiper(".swiper", {
                 centeredSlides: false,
                 spaceBetween: 10,
-                slidesPerView: "auto"
+                slidesPerView: "auto",
+                // temprory breakpoints will change tham later on //
+                breakpoints: {
+                    320:{
+                        slidesPerView: 1
+                    },
+                    640:{
+                        slidesPerView: 2
+                    }
+                }
                 
             });
         });
